@@ -1,0 +1,273 @@
+:root {
+    --mainColor: #ffff00;
+    --secondaryColor:red;
+    --fontColor: black;
+
+    --mainDiceColor: #3A1772;
+    --secondaryDiceColor:#efefef;
+    --thirdDiceColor:#ffffff;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    font-family: 'Press Start 2P', cursive;
+}
+
+
+body {
+    font-family: 'Press Start 2P', cursive;  
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+   
+}
+
+.cyber_pet-wrapper {
+   
+    width: 50%;
+    height: 900px;
+}
+
+.dice_game-wrapper {
+   
+    width: 50%;
+    height: 900px;
+    
+}
+
+#cyber_Dawg{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+header h1{
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-decoration: underline dashed;
+    word-spacing: -20px;
+    word-wrap: normal;
+
+}
+
+.background{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: var(--mainColor);
+
+}
+
+.screen-info-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.1rem;
+    margin-top: 100px;
+}
+
+.screen{
+    background-color: aliceblue;
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+    /* padding: 50px; */
+    
+}
+
+.screen-text {
+    border: 3px solid black;
+    width: 50%;
+    border-radius: 15px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.btn_wrap{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+.btn_holder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    border: 50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--secondaryColor);
+    font-size: 1.2rem;
+    font-family: 'Press Start 2P', cursive;
+    /* margin: 20px; */
+    cursor:pointer;
+}
+
+
+.stats-wrapper{
+    margin-left: 3.5%;
+    padding-left: 10px;
+    
+}
+
+.stats-wrapper ul{
+    list-style: none;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.stats-wrapper ul li{
+    padding-top: 15px;
+    text-align: center;
+}
+
+/* 
+.dog-text{
+    width: 300px;
+} */
+
+
+/********************* dice game below ***********************  */
+
+.container2{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    font-family: 'Press Start 2P', cursive;
+    height: 100%;
+
+}
+
+
+#dice_game{
+    border: 5px solid #ffffff;
+    width: 100%;
+    padding: 10px;
+    background-color: var(--mainColor); 
+}
+
+#dice_img{
+    display: flex;
+    margin: 10px;
+    gap: 10px;
+
+}
+
+
+
+.header2{
+    margin-bottom: 50px;
+}
+.title {
+    font-size: 3.5rem;
+    text-align: center;
+    text-decoration: underline dashed;
+    font-family: 'Press Start 2P', cursive;
+    margin: 5px;
+}
+
+.header2 h2{
+    color: var(--thirdColor);
+    font-weight: 100;
+    padding: 5px;
+    text-align: center;
+}
+
+.aim{
+    color: red;
+    text-decoration: double 2px;
+    text-decoration-line: underline;
+}
+
+.score{
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.diceImg , .featuresImg{
+    margin-left: 5px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    border: 3px solid var(--fontColor);
+    border-radius: 10%;
+    margin-top: 10px;
+    height: 300px;
+    width: 300px;
+    
+}
+
+.instruction{
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.btn2{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    font-family: 'Press Start 2P', cursive;
+    padding: 5px 20px 5px 20px;
+    border-radius: 10px;
+    background-color: var(--secondaryColor);
+    border:5px solid var(--secondaryColor);
+    cursor: pointer;
+
+}
+
+.btn_restart{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 5px 20px 5px 20px;
+    border-radius: 10px;
+    background-color: var(--thirdDiceColor);
+    border:5px solid var(--secondaryDiceColor);
+    cursor: pointer;
+    
+
+}
+
+
+
+
+#your_score{
+    font-size: 1.9rem;
+    margin-left: 20px;
+    padding-left: 100px;
+    bottom: -10px;
+    position: relative;
+
+}
+
+.igSize{
+    max-height: 300px;
+}
+
