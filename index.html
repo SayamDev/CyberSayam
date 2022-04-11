@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--google font-->
+         <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+        </style>
+
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+    </style>
+
+    <script type="module" src="script.js" async></script>
+    <script type="module" src="diceScript.js" async></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Cyber Pet</title>
+</head>
+<body>
+    <div>
+        <main class="container">
+            <section class="cyber_pet-wrapper">
+                
+    
+                <div class="background">
+                    <header id="cyber_Dawg">
+                        <h1>Cyber Pet</h1>
+                    </header>
+                    <h1>If any of your stats reach 0 then you die</h1>
+                    <div class="screen-info-wrapper">
+                        <div class="screen">
+                            <div class="img">
+                                <img class="dog_img" src="images/dawg.png" height="150px" alt="dog">
+                            </div>
+                        </div>
+                        <div class="screen-text">
+                            <h3 class="dog-text"></h3>
+                        </div>
+                    </div>
+                    
+    
+                    <div class="btn_wrap">
+                        
+                        <div class="btn_holder">
+                            <button class="btn" id="drink">1</button>
+                            <p class="text-drink">Drink</p>
+                        </div>
+    
+                        <div class="btn_holder">
+                            <button class="btn" id="feed">2</button>
+                            <p class="text-feed">Feed</p>
+                        </div>
+    
+                        <div class="btn_holder">
+                            <button class="btn" id="play">3</button>
+                            <p class="text-play">Play</p>
+                        </div>
+                        <div class="btn_holder">
+                            <button class="btn" id="sleep">4</button>
+                            <p class="text-sleep">Sleep</p>
+                        </div>
+    
+                        <div class="btn_holder">
+                            <button class="btn" id="walk">5</button>
+                            <p class="text-walk">Walk</p>
+                        </div>
+    
+                        <div class="btn_holder">
+                            <button class="btn" id="speak">6</button>
+                            <p class="text-speak">Speak</p>
+                            <audio src="" autoplay="false" id="woof_Sound"></audio>
+                        </div>
+                    </div> 
+                    
+                    <div class="stats-wrapper">
+                        <ul>
+                            <li class="hungry">Hungry:</li>
+                            <li class="sleepy">Sleepy:</li>
+                            <li class="happy">Happy:</li>
+                            <li class="thirsty">Thirsty:</li>
+                            <li class="bored">Bored:</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="dice_game-wrapper">
+                <div class="container2">
+                    <div id="dice_game">
+                        <header class = "header2">
+                            <h1 class="title">Dice Game</h1>
+                        </header>   
+                
+                        <div class="score">
+                        <p>You rolled:<span id="your_score">0</span></p> 
+                        </div>
+                
+                        <div id="dice_img">
+                            <img src="images/dice1.png" alt="dice roll 1" id="diceImage" class="diceImg igSize">
+                            <img src="images/sc.png"  id="featuresImg" class="featuresImg igSize">
+                        </div>
+                
+                        <p class="instruction"> Click on the button below to start the game</p>
+                        <button id="dice_btn" class="btn2">Roll
+                            <audio src=""  id="diceSound" autoplay="false"></audio>
+                        </button>
+                        <button id="restart" style="display: none;" class="btn_restart">Try Again
+                            <audio src="" id="loser" autoplay="false"></audio>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+          
+        </main>
+            
+    </div>
+</body>
+</html>
